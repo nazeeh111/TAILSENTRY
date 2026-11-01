@@ -28,6 +28,9 @@ Browser revised HTTP export fully exercised: IAB button click produced tailsentr
 
 Preview: approved loopback-only server session98834 on port8768. Prior session56590 was missing and port had no listener before restarting. IAB browser2 tab2 is marked deliverable. Preserve last valid manuscript render, wheel and pre-change archives. dist/TAILSENTRY-source-0.1.0.zip is a verified source archive; originals remain under before-* filenames. TASK_STATE.md/self intentionally excluded from release hashes.
 
-## Remaining action
+## Completion checkpoint
 
-Push the final receipt/documentation commit, verify its remote main SHA, manifest and actual workflow jobs. No scientific rerun or more tuning justified. Once checked, the strongest-proven-result fallback is delivered and no required work remains. Original breakthrough remains explicitly unachieved.
+Delivered the strongest-proven-result fallback. Public remote main7e134ea41277201f63d654119efa84846648f99a matched the local commit. Its separate GitHub Actions run41318412637 completed successfully on both Python3.11 and3.14. Independent checkout advanced to that commit and passed265 artifact/source hash checks; it is clean. The initial depth1 fetch lacked the parent history and could not fast-forward; deepening the disposable clone restored ancestry, after which a normal fast-forward succeeded. This was not a remote force push.
+
+This task-state-only completion note changes no sealed release or source bytes. No scientific rerun or more tuning justified. No required implementation, review, UI export or publication work remains. The original breakthrough remains explicitly unachieved. Goal completion describes the objective-authorized negative-result fallback.
+

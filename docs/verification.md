@@ -9,3 +9,5 @@
 - PDF: final13-page manuscript compiled successfully with the corrected references; rendered source previews inspected across all pages. The final compile has no overfull boxes. LaTeX, figures in PDF/SVG/PNG and source data retained.
 - References: Crossref metadata caught and corrected an incorrect draft ALOE DOI. All cited DOI records and relevant primary arXiv/official documentation pointers were inspected. Method reproduction is distinct from citation verification.
 - Boundaries: no GPU/energy result, outside human peer review, real1e-5 market validation, universal superiority, arXiv submission or independent adoption is claimed. The public repository is https://github.com/nazeeh111/TAILSENTRY. Remote CI evidence is separate from local test logs and is available in its Actions tab.
+
+- Remote delivery: initial main commit929924e83e74ba9b2f9c5f38f83637f285545156 verified against origin; public checkout verified264 artifact/source hashes. GitHub Actions run41318254327 completed successfully on Python3.11 and3.14,104 tests and264 hash checks each. Raw job metadata: results/publication-check.json.

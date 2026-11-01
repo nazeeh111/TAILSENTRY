@@ -6,6 +6,6 @@ The reviewed publication includes source,104 passing test cases, immutable exper
 
 Browser export was verified through the revised HTTP attachment route. The captured JSON equals the saved demo and its canonical digest verifies; results/browser-export-check.json records the evidence.
 
-Initial commit: "Add reproducible rare-loss research engine and negative-result study". Inspect the remote main commit and [numerical-checks workflow](https://github.com/nazeeh111/TAILSENTRY/actions) after push. Local test logs do not establish remote CI success.
+Initial commit: "Add reproducible rare-loss research engine and negative-result study". Remote main matched929924e83e74ba9b2f9c5f38f83637f285545156. The [initial numerical-checks run](https://github.com/nazeeh111/TAILSENTRY/actions/runs/41318254327) passed on Python3.11 and3.14:104 tests plus264 hash checks in each job. A fresh GitHub checkout also passed264 hash checks. Receipt: results/publication-check.json. Subsequent commits have their own workflow results.
 
 The GitHub connector does not expose repository creation here, so the existing GitHub CLI was used with its existing authentication. Credentials were not inspected. No deployment, paper submission, external contact or paid runtime is authorized.

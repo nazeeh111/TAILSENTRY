@@ -1,0 +1,246 @@
+[
+  {
+    "key": "owen2019aloe",
+    "doi": "10.1214/18-EJS1523",
+    "registry_title": "Weak dependence and GMM estimation of supOU and mixed moving average processes",
+    "registry_authors": [
+      {
+        "given": "Imma Valentina",
+        "family": "Curato"
+      },
+      {
+        "given": "Robert",
+        "family": "Stelzer"
+      }
+    ],
+    "registry_date": {
+      "date-parts": [
+        [
+          2019,
+          1,
+          1
+        ]
+      ]
+    },
+    "url": "https://doi.org/10.1214/18-ejs1523"
+  },
+  {
+    "key": "ahn2018",
+    "doi": "10.1145/3167969",
+    "registry_title": "Efficient Simulation for Expectations over the Union of Half-Spaces",
+    "registry_authors": [
+      {
+        "given": "Dohyun",
+        "family": "Ahn"
+      },
+      {
+        "given": "Kyoung-Kuk",
+        "family": "Kim"
+      }
+    ],
+    "registry_date": {
+      "date-parts": [
+        [
+          2018,
+          7,
+          13
+        ]
+      ]
+    },
+    "url": "https://doi.org/10.1145/3167969"
+  },
+  {
+    "key": "elvira2021",
+    "doi": "10.1109/TSP.2021.3055961",
+    "registry_title": "Multiple Importance Sampling for Symbol Error Rate Estimation of Maximum-Likelihood Detectors in MIMO Channels",
+    "registry_authors": [
+      {
+        "given": "Victor",
+        "family": "Elvira"
+      },
+      {
+        "given": "Ignacio",
+        "family": "Santamaria"
+      }
+    ],
+    "registry_date": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "url": "https://doi.org/10.1109/tsp.2021.3055961"
+  },
+  {
+    "key": "uribe2021",
+    "doi": "10.1137/20M1344585",
+    "registry_title": "Cross-Entropy-Based Importance Sampling with Failure-Informed Dimension Reduction for Rare Event Simulation",
+    "registry_authors": [
+      {
+        "given": "Felipe",
+        "family": "Uribe"
+      },
+      {
+        "given": "Iason",
+        "family": "Papaioannou"
+      },
+      {
+        "given": "Youssef M.",
+        "family": "Marzouk"
+      },
+      {
+        "given": "Daniel",
+        "family": "Straub"
+      }
+    ],
+    "registry_date": {
+      "date-parts": [
+        [
+          2021,
+          1
+        ]
+      ]
+    },
+    "url": "https://doi.org/10.1137/20m1344585"
+  },
+  {
+    "key": "tong2023",
+    "doi": "10.1137/22M1524758",
+    "registry_title": "Large Deviation Theory-based Adaptive Importance Sampling for Rare Events in High Dimensions",
+    "registry_authors": [
+      {
+        "given": "Shanyin",
+        "family": "Tong"
+      },
+      {
+        "given": "Georg",
+        "family": "Stadler"
+      }
+    ],
+    "registry_date": {
+      "date-parts": [
+        [
+          2023,
+          7,
+          11
+        ]
+      ]
+    },
+    "url": "https://doi.org/10.1137/22m1524758"
+  },
+  {
+    "key": "kruse2025",
+    "doi": "10.1609/aaai.v39i17.33978",
+    "registry_title": "Enhanced Importance Sampling Through Latent Space Exploration in Normalizing Flows",
+    "registry_authors": [
+      {
+        "given": "Liam Anthony",
+        "family": "Kruse"
+      },
+      {
+        "given": "Alexandros",
+        "family": "Tzikas"
+      },
+      {
+        "given": "Harrison",
+        "family": "Delecki"
+      },
+      {
+        "given": "Mansur",
+        "family": "Arief"
+      },
+      {
+        "given": "Mykel J.",
+        "family": "Kochenderfer"
+      }
+    ],
+    "registry_date": {
+      "date-parts": [
+        [
+          2025,
+          4,
+          11
+        ]
+      ]
+    },
+    "url": "https://doi.org/10.1609/aaai.v39i17.33978"
+  },
+  {
+    "key": "chatterjee2018",
+    "doi": "10.1214/17-AAP1326",
+    "registry_title": "The sample size required in importance sampling",
+    "registry_authors": [
+      {
+        "given": "Sourav",
+        "family": "Chatterjee"
+      },
+      {
+        "given": "Persi",
+        "family": "Diaconis"
+      }
+    ],
+    "registry_date": {
+      "date-parts": [
+        [
+          2018,
+          4,
+          1
+        ]
+      ]
+    },
+    "url": "https://doi.org/10.1214/17-aap1326"
+  },
+  {
+    "key": "au2001",
+    "doi": "10.1016/S0266-8920(01)00019-4",
+    "registry_title": "Estimation of small failure probabilities in high dimensions by subset simulation",
+    "registry_authors": [
+      {
+        "given": "Siu-Kui",
+        "family": "Au"
+      },
+      {
+        "given": "James L.",
+        "family": "Beck"
+      }
+    ],
+    "registry_date": {
+      "date-parts": [
+        [
+          2001,
+          10
+        ]
+      ]
+    },
+    "url": "https://doi.org/10.1016/s0266-8920(01)00019-4"
+  },
+  {
+    "key": "patton2019",
+    "doi": "10.1016/j.jeconom.2018.10.008",
+    "registry_title": "Dynamic semiparametric models for expected shortfall (and Value-at-Risk)",
+    "registry_authors": [
+      {
+        "given": "Andrew J.",
+        "family": "Patton"
+      },
+      {
+        "given": "Johanna F.",
+        "family": "Ziegel"
+      },
+      {
+        "given": "Rui",
+        "family": "Chen"
+      }
+    ],
+    "registry_date": {
+      "date-parts": [
+        [
+          2019,
+          8
+        ]
+      ]
+    },
+    "url": "https://doi.org/10.1016/j.jeconom.2018.10.008"
+  }
+]

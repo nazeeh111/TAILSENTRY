@@ -1,0 +1,15 @@
+.......................................................F................ [ 76%]
+......................                                                   [100%]
+=================================== FAILURES ===================================
+___________ test_underflowed_cover_component_is_explicitly_rejected ____________
+
+    def test_underflowed_cover_component_is_explicitly_rejected():
+        model = normal_max(2,offsets=np.array([0.,-40.]))
+>       with pytest.raises((ValueError,FloatingPointError)):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE any of (ValueError, FloatingPointError)
+
+tests/test_independent_math.py:230: Failed
+=========================== short test summary info ============================
+FAILED tests/test_independent_math.py::test_underflowed_cover_component_is_explicitly_rejected
+1 failed, 93 passed in 28.16s

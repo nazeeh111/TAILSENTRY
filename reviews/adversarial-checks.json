@@ -1,0 +1,333 @@
+{
+  "source_sha256": {
+    "src/tailsentry/__init__.py": "5e97b425247d343f04352aaa7fc41b23e5b0086220cca2d40fcb5647500e85cd",
+    "src/tailsentry/aloe.py": "9a12f4868d835fbca5a48333acb643db1117c911674d5113752e0c791889a679",
+    "src/tailsentry/attribution.py": "1b71c9076ec9e0c6e1bc8af861127c1751fdaf93f66de754103456f08d3360b7",
+    "src/tailsentry/baselines.py": "f0af74b78bd2956cd63ce11e7eff965c5f9777b719c0f134796ea6ef5c6e921d",
+    "src/tailsentry/benchmark.py": "47bc8eba887965b6c3a0b5b4dc320d3cc6d5e7d754cb2cb0b980f3cd51eaca47",
+    "src/tailsentry/cli.py": "8a4a0a7fa884648538770fb3a72f19274e6423c2187e4c56d4d19a6891b35e79",
+    "src/tailsentry/conditional.py": "13876e99e90e047c7b7c09f57789ae67e4c045fa284b11d01910823846a84f05",
+    "src/tailsentry/engine.py": "db3fc308c265f3734b2ef906d560b14ec03e03bdfbfa9299f30535a9a54312dc",
+    "src/tailsentry/envelope.py": "6e78efc3dc2153f7f744d40e445ad1facbeb1305b7ea1db0b5cbcdc214b0c7b3",
+    "src/tailsentry/models.py": "b56e9433b6b47b2194873b67ae0f857e827fa249fb10b389a215897f21126b52",
+    "src/tailsentry/references.py": "692ff14ac2820dbf2bd71148784cf99e40dd5d327a09d33e5c8b9142ba9c74ca",
+    "src/tailsentry/risk.py": "d0bb702e7d83e72480a706cba5aab6c44e8f1df84edeb6dbeacb133da0d99425",
+    "src/tailsentry/sais.py": "e0a6b93e2324c39dced9eab1bb099de1bbcae9857d78eab5ac70d10d67061455",
+    "src/tailsentry/service.py": "0b0b97e671e1f2c33af3a2d34f6258659209ae6623785c80841f127b5e1b1e47",
+    "src/tailsentry/uncertainty.py": "6f0a427bee79be05dbb4c52036c06f01bed2ef1f51b3ccdc62e7e8ec1eff731d"
+  },
+  "ordinary_polynomial_checks": {
+    "count": 50,
+    "maximum_absolute_probability_error": 3.3306690738754696e-16,
+    "maximum_absolute_first_moment_error": 1.7763568394002505e-15
+  },
+  "narrow_islands": [
+    {
+      "radius_squared": 1e-08,
+      "probability": 7.97884559473605e-05,
+      "computed_first_moment": 5.319230400033208e-13,
+      "independent_first_moment": 5.319230400033206e-13,
+      "relative_error": 4.440892098500626e-16,
+      "violates_nonnegative_loss_on_event": false
+    },
+    {
+      "radius_squared": 1e-10,
+      "probability": 7.978845607936602e-06,
+      "computed_first_moment": 5.319230405299245e-16,
+      "independent_first_moment": 5.319230405299244e-16,
+      "relative_error": 2.220446049250313e-16,
+      "violates_nonnegative_loss_on_event": false
+    },
+    {
+      "radius_squared": 1e-12,
+      "probability": 7.978845608103136e-07,
+      "computed_first_moment": 5.319230405351906e-19,
+      "independent_first_moment": 5.319230405351904e-19,
+      "relative_error": 4.440892098500626e-16,
+      "violates_nonnegative_loss_on_event": false
+    }
+  ],
+  "random_cover_falsification": {
+    "models": 32,
+    "points": 8192,
+    "event_points": 4308,
+    "uncovered_event_points": 0,
+    "limit": "Finite random search only; algebraic proof remains necessary."
+  },
+  "historical_checks": {
+    "six_es_tail_integrals_max_absolute_error": 7.632783294297951e-17,
+    "all_exceedance_counts_match": true,
+    "observations": 2748,
+    "source_and_output_hash_validation": "passed read_verified_returns"
+  },
+  "holdout_snapshot": {
+    "raw_rows_read": 12807,
+    "summary_existed": false,
+    "groups": [
+      {
+        "case": "paired4_1e4",
+        "budget": 4096,
+        "method": "conditional_sobol",
+        "runs": 64,
+        "relative_rmse": 1.6298087845069005,
+        "mean_seconds": 0.03942066931085719,
+        "finite_covered": 64,
+        "asymptotic_covered": 16,
+        "mean_finite_width": 1.0
+      },
+      {
+        "case": "paired4_1e4",
+        "budget": 4096,
+        "method": "envelope_raw",
+        "runs": 64,
+        "relative_rmse": 8.028183234938626e-05,
+        "mean_seconds": 0.004315725303058571,
+        "finite_covered": 64,
+        "asymptotic_covered": 20,
+        "mean_finite_width": 5.242110552756842e-07
+      },
+      {
+        "case": "paired4_1e4",
+        "budget": 4096,
+        "method": "envelope_projected_fixed",
+        "runs": 64,
+        "relative_rmse": 5.950022383040528e-05,
+        "mean_seconds": 0.014047350315195217,
+        "finite_covered": 64,
+        "asymptotic_covered": 12,
+        "mean_finite_width": 5.139634190062003e-07
+      },
+      {
+        "case": "paired4_1e4",
+        "budget": 4096,
+        "method": "envelope_projected",
+        "runs": 64,
+        "relative_rmse": 6.177687959217047e-05,
+        "mean_seconds": 0.026528971379775612,
+        "finite_covered": 64,
+        "asymptotic_covered": 9,
+        "mean_finite_width": 6.370451647109401e-07
+      },
+      {
+        "case": "paired4_1e4",
+        "budget": 16384,
+        "method": "conditional_sobol",
+        "runs": 64,
+        "relative_rmse": 0.6769841329682424,
+        "mean_seconds": 0.08311734181279462,
+        "finite_covered": 64,
+        "asymptotic_covered": 49,
+        "mean_finite_width": 1.0
+      },
+      {
+        "case": "paired4_1e4",
+        "budget": 16384,
+        "method": "envelope_raw",
+        "runs": 64,
+        "relative_rmse": 3.401125292324366e-05,
+        "mean_seconds": 0.04399484250279784,
+        "finite_covered": 64,
+        "asymptotic_covered": 45,
+        "mean_finite_width": 1.4116937751479e-07
+      },
+      {
+        "case": "paired4_1e4",
+        "budget": 16384,
+        "method": "envelope_projected_fixed",
+        "runs": 64,
+        "relative_rmse": 2.321337209050376e-05,
+        "mean_seconds": 0.1716803822091606,
+        "finite_covered": 64,
+        "asymptotic_covered": 30,
+        "mean_finite_width": 1.3446455308830255e-07
+      },
+      {
+        "case": "paired4_1e4",
+        "budget": 16384,
+        "method": "envelope_projected",
+        "runs": 64,
+        "relative_rmse": 2.6953062091844376e-05,
+        "mean_seconds": 0.17065388540868298,
+        "finite_covered": 64,
+        "asymptotic_covered": 26,
+        "mean_finite_width": 1.6587875116366124e-07
+      },
+      {
+        "case": "compact2_1e4",
+        "budget": 4096,
+        "method": "conditional_sobol",
+        "runs": 64,
+        "relative_rmse": 6.243217282389903e-05,
+        "mean_seconds": 0.05299495968483825,
+        "finite_covered": 64,
+        "asymptotic_covered": 64,
+        "mean_finite_width": 1.0
+      },
+      {
+        "case": "compact2_1e4",
+        "budget": 4096,
+        "method": "envelope_raw",
+        "runs": 64,
+        "relative_rmse": 0.021018766031874823,
+        "mean_seconds": 0.005895061796763912,
+        "finite_covered": 64,
+        "asymptotic_covered": 60,
+        "mean_finite_width": 1.3510517335333027e-05
+      },
+      {
+        "case": "compact2_1e4",
+        "budget": 4096,
+        "method": "envelope_projected_fixed",
+        "runs": 64,
+        "relative_rmse": 0.01722249127706168,
+        "mean_seconds": 0.017826512346800882,
+        "finite_covered": 64,
+        "asymptotic_covered": 57,
+        "mean_finite_width": 1.1168938824929997e-05
+      },
+      {
+        "case": "compact2_1e4",
+        "budget": 4096,
+        "method": "envelope_projected",
+        "runs": 64,
+        "relative_rmse": 0.01722249127706168,
+        "mean_seconds": 0.01288031703006709,
+        "finite_covered": 64,
+        "asymptotic_covered": 57,
+        "mean_finite_width": 1.1168938824929997e-05
+      },
+      {
+        "case": "compact2_1e4",
+        "budget": 16384,
+        "method": "conditional_sobol",
+        "runs": 64,
+        "relative_rmse": 1.2745665459468624e-05,
+        "mean_seconds": 0.080264933608305,
+        "finite_covered": 64,
+        "asymptotic_covered": 63,
+        "mean_finite_width": 1.0
+      },
+      {
+        "case": "compact2_1e4",
+        "budget": 16384,
+        "method": "envelope_raw",
+        "runs": 64,
+        "relative_rmse": 0.008464218617644011,
+        "mean_seconds": 0.028113552685681498,
+        "finite_covered": 64,
+        "asymptotic_covered": 64,
+        "mean_finite_width": 6.4123888267400244e-06
+      },
+      {
+        "case": "compact2_1e4",
+        "budget": 16384,
+        "method": "envelope_projected_fixed",
+        "runs": 64,
+        "relative_rmse": 0.008146990997241315,
+        "mean_seconds": 0.11247253647252364,
+        "finite_covered": 64,
+        "asymptotic_covered": 59,
+        "mean_finite_width": 5.24038194295758e-06
+      },
+      {
+        "case": "compact2_1e4",
+        "budget": 16384,
+        "method": "envelope_projected",
+        "runs": 64,
+        "relative_rmse": 0.008146990997241315,
+        "mean_seconds": 0.1704222629095966,
+        "finite_covered": 64,
+        "asymptotic_covered": 59,
+        "mean_finite_width": 5.24038194295758e-06
+      },
+      {
+        "case": "correlated4_1e5",
+        "budget": 4096,
+        "method": "conditional_sobol",
+        "runs": 64,
+        "relative_rmse": 0.020898787036531655,
+        "mean_seconds": 0.0387100840025596,
+        "finite_covered": 64,
+        "asymptotic_covered": 60,
+        "mean_finite_width": 1.0
+      },
+      {
+        "case": "correlated4_1e5",
+        "budget": 4096,
+        "method": "envelope_raw",
+        "runs": 64,
+        "relative_rmse": 0.004469812369483252,
+        "mean_seconds": 0.006040213515916548,
+        "finite_covered": 64,
+        "asymptotic_covered": 63,
+        "mean_finite_width": 3.2172748816362877e-07
+      },
+      {
+        "case": "correlated4_1e5",
+        "budget": 4096,
+        "method": "envelope_projected_fixed",
+        "runs": 64,
+        "relative_rmse": 0.0029710219332763107,
+        "mean_seconds": 0.01941986981091759,
+        "finite_covered": 64,
+        "asymptotic_covered": 61,
+        "mean_finite_width": 2.3041247140793162e-07
+      },
+      {
+        "case": "correlated4_1e5",
+        "budget": 4096,
+        "method": "envelope_projected",
+        "runs": 64,
+        "relative_rmse": 0.0035294216862854317,
+        "mean_seconds": 0.05121624228468136,
+        "finite_covered": 64,
+        "asymptotic_covered": 59,
+        "mean_finite_width": 2.643186904107728e-07
+      },
+      {
+        "case": "correlated4_1e5",
+        "budget": 16384,
+        "method": "conditional_sobol",
+        "runs": 64,
+        "relative_rmse": 0.006837095185370696,
+        "mean_seconds": 0.11963961847413884,
+        "finite_covered": 64,
+        "asymptotic_covered": 59,
+        "mean_finite_width": 1.0
+      },
+      {
+        "case": "correlated4_1e5",
+        "budget": 16384,
+        "method": "envelope_raw",
+        "runs": 64,
+        "relative_rmse": 0.0019779082153741903,
+        "mean_seconds": 0.0404367643113801,
+        "finite_covered": 64,
+        "asymptotic_covered": 63,
+        "mean_finite_width": 1.4612166017802915e-07
+      },
+      {
+        "case": "correlated4_1e5",
+        "budget": 16384,
+        "method": "envelope_projected_fixed",
+        "runs": 64,
+        "relative_rmse": 0.001482819558210903,
+        "mean_seconds": 0.10556645190717973,
+        "finite_covered": 64,
+        "asymptotic_covered": 59,
+        "mean_finite_width": 1.006653599196446e-07
+      },
+      {
+        "case": "correlated4_1e5",
+        "budget": 16384,
+        "method": "envelope_projected",
+        "runs": 64,
+        "relative_rmse": 0.0016260829334740767,
+        "mean_seconds": 0.3282689908583052,
+        "finite_covered": 64,
+        "asymptotic_covered": 59,
+        "mean_finite_width": 1.1434238464858755e-07
+      }
+    ]
+  }
+}

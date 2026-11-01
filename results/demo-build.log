@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 203, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/nazeeh/Documents/ChatGPT/Github/TAILSENTRY/src/tailsentry/cli.py", line 25, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/nazeeh/Documents/ChatGPT/Github/TAILSENTRY/src/tailsentry/cli.py", line 18, in main
+    result=investigate(config);text=json.dumps(result,indent=2,allow_nan=False)
+  File "/Users/nazeeh/Documents/ChatGPT/Github/TAILSENTRY/src/tailsentry/service.py", line 35, in investigate
+    r=estimate_envelope(model,threshold,budget,seed,project=method!='envelope_raw',select=method=='envelope_projected',
+                        severity=True,alpha=alpha,relative_target=precision,return_samples=True)
+  File "/Users/nazeeh/Documents/ChatGPT/Github/TAILSENTRY/src/tailsentry/envelope.py", line 128, in estimate_envelope
+    cover=build_cover(model,threshold,optimize_cover)
+  File "/Users/nazeeh/Documents/ChatGPT/Github/TAILSENTRY/src/tailsentry/envelope.py", line 75, in build_cover
+    if total<=0 or not np.isfinite(total) or np.any(masses<=0) or not np.isfinite(masses).all():raise ValueError('cover probabilities outside supported numerical range')
+                                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: cover probabilities outside supported numerical range

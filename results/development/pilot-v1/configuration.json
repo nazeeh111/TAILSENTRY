@@ -1,0 +1,50 @@
+{
+  "output": "results/development/pilot-v1",
+  "runs": 12,
+  "seed_start": 1000,
+  "budgets": [
+    4096
+  ],
+  "cases": [
+    "paired4_1e4",
+    "compact2_1e4",
+    "delta_gamma_1e4"
+  ],
+  "methods": [
+    "mc",
+    "sobol",
+    "ce_single",
+    "ce_mixture",
+    "conditional_sobol",
+    "projected_mixture",
+    "envelope_raw",
+    "envelope_projected_fixed",
+    "envelope_projected",
+    "envelope_unoptimized"
+  ],
+  "source_hashes": {
+    "src/tailsentry/__init__.py": "5e97b425247d343f04352aaa7fc41b23e5b0086220cca2d40fcb5647500e85cd",
+    "src/tailsentry/aloe.py": "9a12f4868d835fbca5a48333acb643db1117c911674d5113752e0c791889a679",
+    "src/tailsentry/baselines.py": "f0af74b78bd2956cd63ce11e7eff965c5f9777b719c0f134796ea6ef5c6e921d",
+    "src/tailsentry/benchmark.py": "47bc8eba887965b6c3a0b5b4dc320d3cc6d5e7d754cb2cb0b980f3cd51eaca47",
+    "src/tailsentry/conditional.py": "191fc0b4871b6c83d81e3949de4a168281a0e08d7cd3b69a4690517acf7c6567",
+    "src/tailsentry/engine.py": "db3fc308c265f3734b2ef906d560b14ec03e03bdfbfa9299f30535a9a54312dc",
+    "src/tailsentry/envelope.py": "e352a9bd34b06ccb01290cd5927cb9701bec00043e08bde6b6574f0f50b599bb",
+    "src/tailsentry/models.py": "d70f4556b9205914741ffdd067fdda399be2960028ec7cdc736969856aa40c5c",
+    "src/tailsentry/references.py": "692ff14ac2820dbf2bd71148784cf99e40dd5d327a09d33e5c8b9142ba9c74ca",
+    "src/tailsentry/risk.py": "d0bb702e7d83e72480a706cba5aab6c44e8f1df84edeb6dbeacb133da0d99425",
+    "src/tailsentry/uncertainty.py": "f6493547db5e87b655f4b24b5b9b91f4e2adaed0eead9d7eda1e83f853590fc5"
+  },
+  "runner_sha256": "f57b52a9d2ba241becfc41d609190e9e23263f2a8ddded541daef9800c7d0096",
+  "protocol_sha256": null,
+  "environment": {
+    "python": "3.14.7",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "system": "macOS-27.2-arm64-arm-64bit-Mach-O",
+    "machine": "arm64",
+    "cpu_only": true,
+    "energy": "not measured",
+    "timing": "sequential wall and process CPU, includes adaptation and geometry"
+  }
+}

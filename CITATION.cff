@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Cite the unsubmitted research report and exact artifact version; no algorithmic novelty is claimed."
+title: "TAILSENTRY: Structure-Certified Conditional Union Sampling for Rare Losses"
+authors:
+  - name: "TAILSENTRY computational research artifact"
+version: 0.1.0
+date-released: 2026-11-01
+license: MIT
+type: software

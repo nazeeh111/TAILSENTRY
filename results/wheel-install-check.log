@@ -1,0 +1,10 @@
+Using CPython 3.14.7 interpreter at: .venv/bin/python
+Creating virtual environment at: /private/tmp/tailsentry-wheel-check
+Activate with: source /private/tmp/tailsentry-wheel-check/bin/activate
+Using Python 3.14.7 environment at: /private/tmp/tailsentry-wheel-check
+Resolved 3 packages in 11ms
+Prepared 1 package in 41ms
+Installed 3 packages in 130ms
+ + numpy==2.5.4
+ + scipy==1.18.1
+ + tailsentry==0.1.0 (from file:///Users/nazeeh/Documents/ChatGPT/Github/TAILSENTRY/dist/tailsentry-0.1.0-py3-none-any.whl)

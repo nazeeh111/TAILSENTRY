@@ -1,0 +1,71 @@
+[
+  {
+    "selected": "envelope_projected_fixed",
+    "comparator": "conditional_sobol",
+    "mse_ratio": 34.73887063888838,
+    "mse_time_ratio": 38.78902219105768,
+    "paired_bootstrap_interval": [
+      26.475302369910267,
+      57.322430700567196
+    ],
+    "unpaired_bootstrap_interval": [
+      26.062354981841537,
+      57.420412289569924
+    ],
+    "isolated_timing_ratio": 37.37368520797103,
+    "isolated_bootstrap_interval": [
+      21.6714336455474,
+      64.53727172290046
+    ],
+    "original_target_met": false,
+    "mean_isolated_seconds_selected": 0.1262889413501398,
+    "mean_isolated_seconds_comparator": 0.11738567316206172,
+    "efficiency_upper_below_one": false
+  },
+  {
+    "selected": "envelope_projected_fixed",
+    "comparator": "envelope_raw",
+    "mse_ratio": 0.02654492365428453,
+    "mse_time_ratio": 0.025180652615320057,
+    "paired_bootstrap_interval": [
+      0.017342427935547793,
+      0.03638150012393521
+    ],
+    "unpaired_bootstrap_interval": [
+      0.017336209068273187,
+      0.03694642895355533
+    ],
+    "isolated_timing_ratio": 0.04208821134561101,
+    "isolated_bootstrap_interval": [
+      0.02419937716241783,
+      0.0729235929028599
+    ],
+    "original_target_met": null,
+    "mean_isolated_seconds_selected": 0.1262889413501398,
+    "mean_isolated_seconds_comparator": 0.07965010152111063,
+    "efficiency_upper_below_one": true
+  },
+  {
+    "selected": "envelope_projected_fixed",
+    "comparator": "ce_single",
+    "mse_ratio": 3.575540656847894e-05,
+    "mse_time_ratio": 0.00011293492848038477,
+    "paired_bootstrap_interval": [
+      3.173447645297849e-05,
+      0.09308842306162651
+    ],
+    "unpaired_bootstrap_interval": [
+      3.189875256224493e-05,
+      0.09140341305111627
+    ],
+    "isolated_timing_ratio": 9.672091620216482e-05,
+    "isolated_bootstrap_interval": [
+      2.5662142228334876e-05,
+      0.08419154483197754
+    ],
+    "original_target_met": null,
+    "mean_isolated_seconds_selected": 0.1262889413501398,
+    "mean_isolated_seconds_comparator": 0.04668599740762147,
+    "efficiency_upper_below_one": true
+  }
+]

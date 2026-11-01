@@ -1,0 +1,85 @@
+Building wheel...
+running egg_info
+writing src/tailsentry.egg-info/PKG-INFO
+writing dependency_links to src/tailsentry.egg-info/dependency_links.txt
+writing entry points to src/tailsentry.egg-info/entry_points.txt
+writing requirements to src/tailsentry.egg-info/requires.txt
+writing top-level names to src/tailsentry.egg-info/top_level.txt
+reading manifest file 'src/tailsentry.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'src/tailsentry.egg-info/SOURCES.txt'
+running bdist_wheel
+running build
+running build_py
+copying src/tailsentry/service.py -> build/lib/tailsentry
+running egg_info
+writing src/tailsentry.egg-info/PKG-INFO
+writing dependency_links to src/tailsentry.egg-info/dependency_links.txt
+writing entry points to src/tailsentry.egg-info/entry_points.txt
+writing requirements to src/tailsentry.egg-info/requires.txt
+writing top-level names to src/tailsentry.egg-info/top_level.txt
+reading manifest file 'src/tailsentry.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'src/tailsentry.egg-info/SOURCES.txt'
+copying src/tailsentry/web/demo.json -> build/lib/tailsentry/web
+installing to build/bdist.macosx-10.15-universal2/wheel
+running install
+running install_lib
+creating build/bdist.macosx-10.15-universal2/wheel
+creating build/bdist.macosx-10.15-universal2/wheel/tailsentry
+copying build/lib/tailsentry/service.py -> build/bdist.macosx-10.15-universal2/wheel/./tailsentry
+copying build/lib/tailsentry/baselines.py -> build/bdist.macosx-10.15-universal2/wheel/./tailsentry
+copying build/lib/tailsentry/benchmark.py -> build/bdist.macosx-10.15-universal2/wheel/./tailsentry
+copying build/lib/tailsentry/models.py -> build/bdist.macosx-10.15-universal2/wheel/./tailsentry
+copying build/lib/tailsentry/references.py -> build/bdist.macosx-10.15-universal2/wheel/./tailsentry
+creating build/bdist.macosx-10.15-universal2/wheel/tailsentry/web
+copying build/lib/tailsentry/web/evidence.json -> build/bdist.macosx-10.15-universal2/wheel/./tailsentry/web
+copying build/lib/tailsentry/web/index.html -> build/bdist.macosx-10.15-universal2/wheel/./tailsentry/web
+copying build/lib/tailsentry/web/demo.json -> build/bdist.macosx-10.15-universal2/wheel/./tailsentry/web
+copying build/lib/tailsentry/web/style.css -> build/bdist.macosx-10.15-universal2/wheel/./tailsentry/web
+copying build/lib/tailsentry/web/app.js -> build/bdist.macosx-10.15-universal2/wheel/./tailsentry/web
+copying build/lib/tailsentry/web/protocol.md -> build/bdist.macosx-10.15-universal2/wheel/./tailsentry/web
+copying build/lib/tailsentry/aloe.py -> build/bdist.macosx-10.15-universal2/wheel/./tailsentry
+copying build/lib/tailsentry/__init__.py -> build/bdist.macosx-10.15-universal2/wheel/./tailsentry
+copying build/lib/tailsentry/uncertainty.py -> build/bdist.macosx-10.15-universal2/wheel/./tailsentry
+copying build/lib/tailsentry/attribution.py -> build/bdist.macosx-10.15-universal2/wheel/./tailsentry
+copying build/lib/tailsentry/engine.py -> build/bdist.macosx-10.15-universal2/wheel/./tailsentry
+copying build/lib/tailsentry/sais.py -> build/bdist.macosx-10.15-universal2/wheel/./tailsentry
+copying build/lib/tailsentry/cli.py -> build/bdist.macosx-10.15-universal2/wheel/./tailsentry
+copying build/lib/tailsentry/risk.py -> build/bdist.macosx-10.15-universal2/wheel/./tailsentry
+copying build/lib/tailsentry/conditional.py -> build/bdist.macosx-10.15-universal2/wheel/./tailsentry
+copying build/lib/tailsentry/envelope.py -> build/bdist.macosx-10.15-universal2/wheel/./tailsentry
+running install_egg_info
+Copying src/tailsentry.egg-info to build/bdist.macosx-10.15-universal2/wheel/./tailsentry-0.1.0-py3.14.egg-info
+running install_scripts
+creating build/bdist.macosx-10.15-universal2/wheel/tailsentry-0.1.0.dist-info/WHEEL
+creating '/Users/nazeeh/Documents/ChatGPT/Github/TAILSENTRY/dist/.tmp-q2pgs3fq/tailsentry-0.1.0-py3-none-any.whl' and adding 'build/bdist.macosx-10.15-universal2/wheel' to it
+adding 'tailsentry/__init__.py'
+adding 'tailsentry/aloe.py'
+adding 'tailsentry/attribution.py'
+adding 'tailsentry/baselines.py'
+adding 'tailsentry/benchmark.py'
+adding 'tailsentry/cli.py'
+adding 'tailsentry/conditional.py'
+adding 'tailsentry/engine.py'
+adding 'tailsentry/envelope.py'
+adding 'tailsentry/models.py'
+adding 'tailsentry/references.py'
+adding 'tailsentry/risk.py'
+adding 'tailsentry/sais.py'
+adding 'tailsentry/service.py'
+adding 'tailsentry/uncertainty.py'
+adding 'tailsentry/web/app.js'
+adding 'tailsentry/web/demo.json'
+adding 'tailsentry/web/evidence.json'
+adding 'tailsentry/web/index.html'
+adding 'tailsentry/web/protocol.md'
+adding 'tailsentry/web/style.css'
+adding 'tailsentry-0.1.0.dist-info/licenses/LICENSE'
+adding 'tailsentry-0.1.0.dist-info/METADATA'
+adding 'tailsentry-0.1.0.dist-info/WHEEL'
+adding 'tailsentry-0.1.0.dist-info/entry_points.txt'
+adding 'tailsentry-0.1.0.dist-info/top_level.txt'
+adding 'tailsentry-0.1.0.dist-info/RECORD'
+removing build/bdist.macosx-10.15-universal2/wheel
+Successfully built dist/tailsentry-0.1.0-py3-none-any.whl

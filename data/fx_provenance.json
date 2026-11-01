@@ -1,0 +1,62 @@
+{
+  "sources": {
+    "eur": {
+      "url": "https://www.federalreserve.gov/releases/h10/hist/dat00_eu.htm",
+      "retrieved_at_utc": "2026-11-01T07:49:31.736342+00:00",
+      "content_type": "text/html",
+      "sha256": "5ac2842da630528161d358d2405d070dcc4919bc9afd1000307bbacffe00a217",
+      "path": "raw/h10_eur.html",
+      "raw_rows": 6995,
+      "selected_rows": 6783,
+      "selected_missing": 265
+    },
+    "jpy": {
+      "url": "https://www.federalreserve.gov/releases/h10/hist/dat00_ja.htm",
+      "retrieved_at_utc": "2026-11-01T07:49:32.932834+00:00",
+      "content_type": "text/html",
+      "sha256": "a93dc5f1b77f94869fc8e119e78591b4cd130bee06f06e69093c5157871f2d7f",
+      "path": "raw/h10_jpy.html",
+      "raw_rows": 6995,
+      "selected_rows": 6783,
+      "selected_missing": 265
+    },
+    "gbp": {
+      "url": "https://www.federalreserve.gov/releases/h10/hist/dat00_uk.htm",
+      "retrieved_at_utc": "2026-11-01T07:49:34.046630+00:00",
+      "content_type": "text/html",
+      "sha256": "cad7ad3332065ad73e68d5f58d36d2aaafdaab184e69a2dc619bfdbe3508eb55",
+      "path": "raw/h10_gbp.html",
+      "raw_rows": 6995,
+      "selected_rows": 6783,
+      "selected_missing": 265
+    }
+  },
+  "source_description": "Federal Reserve H.10 noon New York buying rates for cable transfers payable in foreign currencies",
+  "licensing_url": "https://www.federalreserve.gov/disclaimer.htm",
+  "licensing_note": "Board information is public domain unless otherwise indicated; attribution requested. No Board logos are included.",
+  "selection": {
+    "start": "2000-01-01",
+    "end": "2025-12-31",
+    "train_end": "2014-12-31",
+    "evaluation_start": "2015-01-01",
+    "alignment": "Complete-case source dates before computing returns; no forward fill",
+    "return_interval": "Consecutive complete observations, potentially spanning weekends or holidays",
+    "basket": "Equal USD value exposures to EUR, JPY, GBP; one-observation simple loss = minus average simple currency return; no interest, carry, transaction costs, intraday prices or fitted model"
+  },
+  "counts": {
+    "source_union_dates": 6783,
+    "complete_levels": 6518,
+    "dropped_dates": 265,
+    "returns": 6517,
+    "train_returns": 3769,
+    "evaluation_returns": 2748,
+    "multi_calendar_day_intervals": 1429
+  },
+  "first_complete_date": "2000-01-03",
+  "last_complete_date": "2025-12-31",
+  "outputs": {
+    "fx_levels.csv": "9c67fae2a26db533be5ecd93649355d9fdd91b349ecdc867cb042bf0e69781c6",
+    "fx_returns.csv": "4d83acc48d3e9fd52d8b6b44f8796bc0fac1364389d5896e348cfe1e29db6881"
+  },
+  "limitations": "Current revised source vintage, not point-in-time vintages. Historical observations assess financial model fit at observable tail levels, not 1e-5 event probabilities. The split is fixed and no model is fitted by this preparation script."
+}

@@ -1,0 +1,11 @@
+{
+  "checks": [
+    "root200",
+    "host-rebinding403",
+    "missing-origin403",
+    "actual-engine-post200-and-reference",
+    "bounded-budget400",
+    "cross-origin403"
+  ],
+  "passed": 6
+}

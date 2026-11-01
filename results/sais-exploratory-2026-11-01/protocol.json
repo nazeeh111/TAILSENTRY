@@ -1,0 +1,50 @@
+{
+  "kind": "exploratory post-primary-evaluation baseline reproduction; not final holdout",
+  "created_utc": "2026-11-01T08:24:40.422496+00:00",
+  "cases": [
+    {
+      "name": "paper_S1",
+      "dimension": 2,
+      "threshold": 0.0
+    },
+    {
+      "name": "paper_S2",
+      "dimension": 2,
+      "threshold": 0.0
+    },
+    {
+      "name": "paper_S4_d8",
+      "dimension": 8,
+      "threshold": 3.5
+    }
+  ],
+  "replications": 24,
+  "seed_first": 410200,
+  "seed_last": 410223,
+  "budget": 16384,
+  "settings": {
+    "components": 4,
+    "max_iterations": 10,
+    "rho": 0.1,
+    "pilot_fraction": 0.3333333333333333,
+    "forgetting": 0.1,
+    "confirmation_defense": 0.1
+  },
+  "source_sha256": "e0a6b93e2324c39dced9eab1bb099de1bbcae9857d78eab5ac70d10d67061455",
+  "reference": {
+    "values": {
+      "paper_S1": 0.003478946320931294,
+      "paper_S2": 6.419213708727797e-05,
+      "paper_S4_d8": 0.00023262907903552502
+    },
+    "S1_quadrature_reported_error": 1.4365030774126763e-13,
+    "S1_omitted_target_mass_bound": 3.552964224155308e-33,
+    "S2_quadrature_reported_error": 2.3981063781681495e-18,
+    "construction": "S1 independent scalar-normal conditional quadrature; S2 independent rotated-normal conditional quadrature; S4 analytic normal survival"
+  },
+  "process_thread_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  }
+}

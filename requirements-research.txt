@@ -1,0 +1,6 @@
+# Recorded Python3.14 research environment; install project separately with -e .
+numpy==2.5.4
+scipy==1.18.1
+matplotlib==3.11.2
+pytest==9.2.0
+pillow==13.0.0

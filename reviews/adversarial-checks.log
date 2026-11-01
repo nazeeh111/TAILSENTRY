@@ -1,0 +1,47 @@
+{
+  "ordinary_polynomial_checks": {
+    "count": 50,
+    "maximum_absolute_probability_error": 3.3306690738754696e-16,
+    "maximum_absolute_first_moment_error": 1.7763568394002505e-15
+  },
+  "narrow_islands": [
+    {
+      "radius_squared": 1e-08,
+      "probability": 7.97884559473605e-05,
+      "computed_first_moment": 5.319230400033208e-13,
+      "independent_first_moment": 5.319230400033206e-13,
+      "relative_error": 4.440892098500626e-16,
+      "violates_nonnegative_loss_on_event": false
+    },
+    {
+      "radius_squared": 1e-10,
+      "probability": 7.978845607936602e-06,
+      "computed_first_moment": 5.319230405299245e-16,
+      "independent_first_moment": 5.319230405299244e-16,
+      "relative_error": 2.220446049250313e-16,
+      "violates_nonnegative_loss_on_event": false
+    },
+    {
+      "radius_squared": 1e-12,
+      "probability": 7.978845608103136e-07,
+      "computed_first_moment": 5.319230405351906e-19,
+      "independent_first_moment": 5.319230405351904e-19,
+      "relative_error": 4.440892098500626e-16,
+      "violates_nonnegative_loss_on_event": false
+    }
+  ],
+  "random_cover_falsification": {
+    "models": 32,
+    "points": 8192,
+    "event_points": 4308,
+    "uncovered_event_points": 0,
+    "limit": "Finite random search only; algebraic proof remains necessary."
+  },
+  "historical_checks": {
+    "six_es_tail_integrals_max_absolute_error": 7.632783294297951e-17,
+    "all_exceedance_counts_match": true,
+    "observations": 2748,
+    "source_and_output_hash_validation": "passed read_verified_returns"
+  }
+}
+holdout rows inspected 12807 summary existed False

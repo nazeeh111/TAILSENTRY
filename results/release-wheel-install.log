@@ -1,0 +1,6 @@
+Using Python 3.14.7 environment at: /private/tmp/tailsentry-wheel-check
+Resolved 3 packages in 11ms
+Prepared 1 package in 12ms
+Uninstalled 1 package in 7ms
+Installed 1 package in 5ms
+ ~ tailsentry==0.1.0 (from file:///Users/nazeeh/Documents/ChatGPT/Github/TAILSENTRY/dist/tailsentry-0.1.0-py3-none-any.whl)

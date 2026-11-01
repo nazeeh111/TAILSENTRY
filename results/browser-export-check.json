@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-01",
+  "interaction": "IAB button EXPORT RECORD clicked after waitForEvent(download) registered",
+  "download_filename": "tailsentry-4f8015c54642.json",
+  "bytes": 39382,
+  "file_sha256": "4734edcf6fd037b83e54557813c37dc28077b8b1d0ca1f5a709ed824308b7bc5",
+  "record_sha256": "4f8015c54642b602eb873c6ac94a184f31e4110401a30f57e7c0a71228eef277",
+  "equals_saved_demo": true,
+  "digest_verified": true,
+  "browser_console_errors_or_warnings": [],
+  "scope": "Revised HTTP attachment, saved demo record; not every browser or arbitrary configuration."
+}

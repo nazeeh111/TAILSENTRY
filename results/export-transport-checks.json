@@ -1,0 +1,11 @@
+{
+  "checks": [
+    "saved demo exports identical JSON with attachment headers and valid digest",
+    "fresh analytic engine record exports identical bytes and current source digest",
+    "unknown record returns404",
+    "path traversal is not a file export",
+    "export retains loopback host guard"
+  ],
+  "passed": 5,
+  "browser_file_arrival": "not yet verified; Computer Use reports locked Mac"
+}

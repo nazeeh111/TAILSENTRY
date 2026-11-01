@@ -1,0 +1,31 @@
+{
+  "seed": 920,
+  "repetitions": 32,
+  "budget": 16384,
+  "case": "delta_gamma_1e4",
+  "order": "independent random permutation per repetition",
+  "methods": [
+    "envelope_projected_fixed",
+    "envelope_raw",
+    "conditional_sobol",
+    "ce_single"
+  ],
+  "source_hashes": {
+    "src/tailsentry/service.py": "0b0b97e671e1f2c33af3a2d34f6258659209ae6623785c80841f127b5e1b1e47",
+    "src/tailsentry/baselines.py": "f0af74b78bd2956cd63ce11e7eff965c5f9777b719c0f134796ea6ef5c6e921d",
+    "src/tailsentry/benchmark.py": "47bc8eba887965b6c3a0b5b4dc320d3cc6d5e7d754cb2cb0b980f3cd51eaca47",
+    "src/tailsentry/models.py": "b56e9433b6b47b2194873b67ae0f857e827fa249fb10b389a215897f21126b52",
+    "src/tailsentry/references.py": "692ff14ac2820dbf2bd71148784cf99e40dd5d327a09d33e5c8b9142ba9c74ca",
+    "src/tailsentry/aloe.py": "9a12f4868d835fbca5a48333acb643db1117c911674d5113752e0c791889a679",
+    "src/tailsentry/__init__.py": "5e97b425247d343f04352aaa7fc41b23e5b0086220cca2d40fcb5647500e85cd",
+    "src/tailsentry/uncertainty.py": "be3e9e80e8b5bb59a1331ab4de73155526c54bc2430ca11938626056514d9622",
+    "src/tailsentry/attribution.py": "1b71c9076ec9e0c6e1bc8af861127c1751fdaf93f66de754103456f08d3360b7",
+    "src/tailsentry/engine.py": "897d2ecab3741c3b4718fc0a1918f571d2cf72d0ff8af0e0d2243d36c5074788",
+    "src/tailsentry/sais.py": "e0a6b93e2324c39dced9eab1bb099de1bbcae9857d78eab5ac70d10d67061455",
+    "src/tailsentry/cli.py": "8a4a0a7fa884648538770fb3a72f19274e6423c2187e4c56d4d19a6891b35e79",
+    "src/tailsentry/risk.py": "b85bc9af0064239f87121c6d92de62672207a7d3f6745d794da35b5b146ac7e9",
+    "src/tailsentry/conditional.py": "ed50bc1947818490d5d34e06adbdd8c8f258156bf407c8745a88f09e0e39fac6",
+    "src/tailsentry/envelope.py": "a1e35ed33e4bea460b7fc571c857b38efc3ae44ec1a5f5fcdf2dbf1a8189e46f"
+  },
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O"
+}

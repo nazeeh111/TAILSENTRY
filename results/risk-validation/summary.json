@@ -1,0 +1,62 @@
+[
+  {
+    "model": "normal_max2",
+    "alpha": 0.99,
+    "runs": 32,
+    "truth_var": 2.5749614555905715,
+    "truth_es": 2.8915359252755533,
+    "var_rmse": 0.0051246233524880865,
+    "var_bias": 0.0013659919636277856,
+    "var_asymptotic_coverage": 0.8125,
+    "es_rmse": 0.00718300045434253,
+    "es_bias": -0.00032437226241242845,
+    "es_asymptotic_coverage": 0.90625,
+    "finite_grid_bracket_coverage": 1.0,
+    "finite_grid_two_sided_rate": 1.0
+  },
+  {
+    "model": "normal_max2",
+    "alpha": 0.999,
+    "runs": 32,
+    "truth_var": 3.2904563687073107,
+    "truth_es": 3.554346702348256,
+    "var_rmse": 0.005246692938922859,
+    "var_bias": 0.0009179894697591978,
+    "var_asymptotic_coverage": 0.8125,
+    "es_rmse": 0.006923062271757931,
+    "es_bias": -0.0005143167202880661,
+    "es_asymptotic_coverage": 0.90625,
+    "finite_grid_bracket_coverage": 1.0,
+    "finite_grid_two_sided_rate": 1.0
+  },
+  {
+    "model": "delta_gamma",
+    "alpha": 0.99,
+    "runs": 32,
+    "truth_var": 2.236923232267756,
+    "truth_es": 2.7536294676762516,
+    "var_rmse": 0.004566299273111318,
+    "var_bias": -0.0006137924141716017,
+    "var_asymptotic_coverage": 0.90625,
+    "es_rmse": 0.005484371670223115,
+    "es_bias": -0.0009972044539948988,
+    "es_asymptotic_coverage": 0.9375,
+    "finite_grid_bracket_coverage": 1.0,
+    "finite_grid_two_sided_rate": 1.0
+  },
+  {
+    "model": "delta_gamma",
+    "alpha": 0.999,
+    "runs": 32,
+    "truth_var": 3.431109218554974,
+    "truth_es": 3.9575801627517913,
+    "var_rmse": 0.004515055257618439,
+    "var_bias": -0.0012667045410518912,
+    "var_asymptotic_coverage": 0.9375,
+    "es_rmse": 0.004756890464137464,
+    "es_bias": -0.0014276854303716807,
+    "es_asymptotic_coverage": 0.90625,
+    "finite_grid_bracket_coverage": 1.0,
+    "finite_grid_two_sided_rate": 1.0
+  }
+]

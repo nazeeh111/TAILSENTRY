@@ -1,0 +1,30 @@
+{
+  "case": "paper S4 dimension10",
+  "source_equation": 25,
+  "seed_first": 410300,
+  "seed_last": 410323,
+  "budget": 450000,
+  "components": 5,
+  "samples_per_component": 3000,
+  "rho": 0.2,
+  "truth": 0.00023262907903552502,
+  "runs": 24,
+  "threshold_reached_fraction": 1.0,
+  "estimate": {
+    "mean": 0.00023239758781863702,
+    "relative_rmse": 0.006028846657344788,
+    "sd": 1.4129990748560575e-06
+  },
+  "paper_recycled_estimate": {
+    "mean": 0.00023265403892048573,
+    "relative_rmse": 0.02575530163350021,
+    "sd": 6.120241734736937e-06
+  },
+  "paper_last_level_estimate": {
+    "mean": 0.00023270486828799977,
+    "relative_rmse": 0.02687668874858226,
+    "sd": 6.3863035370935105e-06
+  },
+  "asymptotic_confirmation_coverage": 0.9583333333333334,
+  "mean_seconds": 1.2456318419135641
+}

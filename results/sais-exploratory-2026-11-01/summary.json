@@ -1,0 +1,86 @@
+{
+  "paper_S1": {
+    "truth": 0.003478946320931294,
+    "runs": 24,
+    "errors": [],
+    "estimate": {
+      "mean": 0.0034562874663522473,
+      "rmse": 0.0002711709249991285,
+      "relative_rmse": 0.07794628027676426,
+      "sd": 0.00027603449099052556
+    },
+    "paper_recycled_estimate": {
+      "mean": 0.0035313455069153885,
+      "rmse": 0.000759118131521872,
+      "relative_rmse": 0.21820346205245858,
+      "sd": 0.0007735955552096551
+    },
+    "paper_last_level_estimate": {
+      "mean": 0.003490113316331093,
+      "rmse": 0.0008535658441399058,
+      "relative_rmse": 0.24535182937557115,
+      "sd": 0.0008718495772707249
+    },
+    "asymptotic_confirmation_coverage": 0.9583333333333334,
+    "finite_confirmation_coverage": 1.0,
+    "threshold_reached_fraction": 1.0,
+    "mean_pilot_evaluations": 1292.0,
+    "mean_seconds": 0.01713383166740338
+  },
+  "paper_S2": {
+    "truth": 6.419213708727797e-05,
+    "runs": 24,
+    "errors": [],
+    "estimate": {
+      "mean": 4.7592405851960764e-05,
+      "rmse": 2.097957413651695e-05,
+      "relative_rmse": 0.32682467181287883,
+      "sd": 1.3105251009915152e-05
+    },
+    "paper_recycled_estimate": {
+      "mean": 6.178013934744509e-05,
+      "rmse": 2.3751223919063535e-05,
+      "relative_rmse": 0.37000207497018683,
+      "sd": 2.4136630748409812e-05
+    },
+    "paper_last_level_estimate": {
+      "mean": 6.008005752334759e-05,
+      "rmse": 2.3964409729678343e-05,
+      "relative_rmse": 0.37332313297336495,
+      "sd": 2.411675373680892e-05
+    },
+    "asymptotic_confirmation_coverage": 0.20833333333333334,
+    "finite_confirmation_coverage": 1.0,
+    "threshold_reached_fraction": 1.0,
+    "mean_pilot_evaluations": 1360.0,
+    "mean_seconds": 0.015562013914556397
+  },
+  "paper_S4_d8": {
+    "truth": 0.00023262907903552502,
+    "runs": 24,
+    "errors": [],
+    "estimate": {
+      "mean": 0.00022028401551927885,
+      "rmse": 0.00038869747958961967,
+      "relative_rmse": 1.6708894743561329,
+      "sd": 0.00039685721455425156
+    },
+    "paper_recycled_estimate": {
+      "mean": 0.00019088228679082052,
+      "rmse": 0.0004834286984818319,
+      "relative_rmse": 2.0781094972568197,
+      "sd": 0.000491981454425777
+    },
+    "paper_last_level_estimate": {
+      "mean": 0.00020376625553362852,
+      "rmse": 0.0005304699418243424,
+      "relative_rmse": 2.2803251597936893,
+      "sd": 0.0005410765082269617
+    },
+    "asymptotic_confirmation_coverage": 0.3333333333333333,
+    "finite_confirmation_coverage": 1.0,
+    "threshold_reached_fraction": 0.041666666666666664,
+    "mean_pilot_evaluations": 5304.0,
+    "mean_seconds": 0.04405390957981581
+  }
+}

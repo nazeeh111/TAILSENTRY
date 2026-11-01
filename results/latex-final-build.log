@@ -1,0 +1,40 @@
+note: using only cached resource files
+note: Running TeX ...
+error: tailsentry.tex:76: Font T1/lmr/m/n/8=ec-lmr8 at 8.0pt not loadable: Metric (TFM) file or installed font not found
+note: Writing `paper/tailsentry.log` (18.3955078125 KiB)
+error: something bad happened inside XeTeX; its output follows:
+
+===============================================================================
+(tailsentry.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-02-24> (article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(size11.clo)) (geometry.sty (keyval.sty) (ifvtex.sty (iftex.sty))) (fontenc.sty
+(t1lmr.fd)) (lmodern.sty) (microtype.sty (etoolbox.sty) (microtype-xetex.def)
+(microtype.cfg)) (amsmath.sty
+For additional information on amsmath, use the `?' option.
+(amstext.sty (amsgen.sty)) (amsbsy.sty) (amsopn.sty)) (amssymb.sty
+(amsfonts.sty)) (amsthm.sty) (booktabs.sty) (graphicx.sty (graphics.sty
+(trig.sty) (graphics.cfg) (xetex.def))) (xcolor.sty (color.cfg)) (url.sty)
+(hyperref.sty (ltxcmds.sty) (pdftexcmds.sty (infwarerr.sty)) (kvsetkeys.sty)
+(kvdefinekeys.sty) (pdfescape.sty) (hycolor.sty) (letltxmacro.sty) (auxhook.sty
+) (kvoptions.sty) (pd1enc.def) (intcalc.sty) (etexcmds.sty) (puenc.def)
+(bitset.sty (bigintcalc.sty)) (atbegshi-ltx.sty)) (hxetex.def (stringenc.sty)
+(rerunfilecheck.sty (atveryend-ltx.sty) (uniquecounter.sty))) (natbib.sty)
+(enumitem.sty) (l3backend-xetex.def) (tailsentry.aux) (ts1cmr.fd)
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+(mt-cmr.cfg) (nameref.sty (refcount.sty) (gettitlestring.sty)) (tailsentry.out)
+ (tailsentry.out) (ot1lmr.fd) (omllmm.fd) (omslmsy.fd) (omxlmex.fd) (umsa.fd)
+(mt-msa.cfg) (umsb.fd) (mt-msb.cfg) [1] [2]
+! Font T1/lmr/m/n/8=ec-lmr8 at 8.0pt not loadable: Metric (TFM) file or install
+ed font not found.
+<to be read again> 
+                   relax 
+l.76 ...t\}\subseteq C\quad(f\text{-almost surely}
+                                                  ),\quad
+Output written on tailsentry.xdv (2 pages, 20380 bytes).
+Transcript written on tailsentry.log.
+===============================================================================
+error: the XeTeX engine had an unrecoverable error
+caused by: halted on potentially-recoverable error as specified

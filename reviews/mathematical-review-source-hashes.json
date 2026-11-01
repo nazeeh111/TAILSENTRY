@@ -1,0 +1,8 @@
+{
+  "src/tailsentry/conditional.py": "191fc0b4871b6c83d81e3949de4a168281a0e08d7cd3b69a4690517acf7c6567",
+  "src/tailsentry/models.py": "b56e9433b6b47b2194873b67ae0f857e827fa249fb10b389a215897f21126b52",
+  "src/tailsentry/engine.py": "db3fc308c265f3734b2ef906d560b14ec03e03bdfbfa9299f30535a9a54312dc",
+  "src/tailsentry/uncertainty.py": "6f0a427bee79be05dbb4c52036c06f01bed2ef1f51b3ccdc62e7e8ec1eff731d",
+  "src/tailsentry/envelope.py": "1a6baec64bcdc02ba566f094c183b239a0f3a1ece1c38fca65a60b2c4134aa1f",
+  "tests/test_independent_math.py": "4ef4a8636ce3024a64aab82c7a4f1163ef50879e607d4fe8d5e92a80f6b088cd"
+}

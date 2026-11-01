@@ -1,0 +1,18 @@
+note: using only cached resource files
+note: Running TeX ...
+warning: tailsentry.bbl:28: Underfull \hbox (badness 10000) in paragraph at lines 24--28
+warning: tailsentry.bbl:28: Underfull \hbox (badness 10000) in paragraph at lines 24--28
+warning: tailsentry.bbl:121: Underfull \hbox (badness 10000) in paragraph at lines 116--121
+note: Running BibTeX on tailsentry.aux ...
+note: Rerunning TeX because bibtex was run ...
+warning: tailsentry.bbl:28: Underfull \hbox (badness 10000) in paragraph at lines 24--28
+warning: tailsentry.bbl:28: Underfull \hbox (badness 10000) in paragraph at lines 24--28
+warning: tailsentry.bbl:121: Underfull \hbox (badness 10000) in paragraph at lines 116--121
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+note: Running xdvipdfmx ...
+note: Writing `paper/build-v4/tailsentry.blg` (200 B)
+note: Writing `paper/build-v4/tailsentry.bbl` (6.8720703125 KiB)
+note: Writing `paper/build-v4/tailsentry.out` (3.8408203125 KiB)
+note: Writing `paper/build-v4/tailsentry.aux` (7.1943359375 KiB)
+note: Writing `paper/build-v4/tailsentry.pdf` (179.5654296875 KiB)
+note: Writing `paper/build-v4/tailsentry.log` (19.921875 KiB)

@@ -1,0 +1,58 @@
+{
+  "rows": 17280,
+  "groups": 240,
+  "all_groups_and_hashes_verified": true,
+  "frozen_snapshot_hashes_match": {
+    "main-v1": true,
+    "primary-v2": true
+  },
+  "primary_comparisons": [
+    {
+      "comparator": "conditional_sobol",
+      "mse_time_ratio": 38.78902219105768,
+      "paired_95_interval": [
+        26.475302369910267,
+        57.322430700567196
+      ],
+      "isolated_95_interval": [
+        21.6714336455474,
+        64.53727172290046
+      ]
+    },
+    {
+      "comparator": "envelope_raw",
+      "mse_time_ratio": 0.025180652615320057,
+      "paired_95_interval": [
+        0.017342427935547793,
+        0.03638150012393521
+      ],
+      "isolated_95_interval": [
+        0.02419937716241783,
+        0.0729235929028599
+      ]
+    },
+    {
+      "comparator": "ce_single",
+      "mse_time_ratio": 0.00011293492848038477,
+      "paired_95_interval": [
+        3.173447645297849e-05,
+        0.09308842306162651
+      ],
+      "isolated_95_interval": [
+        2.5662142228334876e-05,
+        0.08419154483197754
+      ]
+    }
+  ],
+  "selected_primary_finite_coverage": {
+    "rate": 1.0,
+    "count": 128,
+    "binomial_interval": [
+      0.9715919465564561,
+      1.0
+    ],
+    "mean_width": 4.8646922914366585e-06
+  },
+  "precision_guard_examples_passed": true
+}
+maximum shifted-island relative error 1.8818016494503986e-05

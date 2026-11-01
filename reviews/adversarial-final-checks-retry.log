@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/nazeeh/Documents/ChatGPT/Github/TAILSENTRY/reviews/adversarial-final-checks.py", line 70, in <module>
+    assert observed>0 and abs(error)<1e-6,(center,nominal_r2,error)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: (4.0, 1e-12, -1.1823481107509082e-06)

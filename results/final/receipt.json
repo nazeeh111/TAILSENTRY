@@ -1,0 +1,17 @@
+{
+  "rows": 17280,
+  "groups": 240,
+  "sources": [
+    "main-v1 complete secondary groups",
+    "primary-v2 primary only"
+  ],
+  "omitted": "All partial main-v1 primary groups excluded; no selective secondary omission",
+  "hashes": {
+    "results/holdout/main-v1/runs.jsonl": "f84a580c20bdd46e4e176478798adbcb54ee7cc210797e2e4ddc7172f2014f9a",
+    "results/holdout/primary-v2/runs.jsonl": "4379a29bd222067b5c79ac3c2d63038cbf88261975407a92e25fe3b98e826b9a",
+    "results/final/runs.jsonl": "8392a7b4a775cc83c18d1d55bfa90ae521fc25471c9b46f0dfed90ad93a06880",
+    "results/final/summary.json": "1859beb2fab0425fa0ce89154d74019a30f3a337fe180856811f065641df5713",
+    "results/final/primary-analysis.json": "8988fe031afa2590f0df25d22cf349a640d8ac74a45cdc253c3fb2a5fba94ff3"
+  },
+  "metadata_correction": "original_target_met only applies to conditional_sobol; original numeric analysis retained in primary-analysis.before-metadata.json"
+}

@@ -9,5 +9,5 @@ for name in sorted(set(names)):
  if name in ('','RELEASE_MANIFEST.json','TASK_STATE.md'):continue
  path=root/name
  if path.is_file():files[name]=hashlib.sha256(path.read_bytes()).hexdigest()
-(root/'RELEASE_MANIFEST.json').write_text(json.dumps({'version':'0.1.0','algorithmic_novelty':'unestablished','primary_efficiency_target':'failed','excluded_mutable_files':['TASK_STATE.md','RELEASE_MANIFEST.json'],'files':files},indent=2)+'\n')
+(root/'RELEASE_MANIFEST.json').write_text(json.dumps({'version':'0.1.1.dev0','algorithmic_novelty':'unestablished','primary_efficiency_target':'failed','excluded_mutable_files':['TASK_STATE.md','RELEASE_MANIFEST.json'],'files':files},indent=2)+'\n')
 print(len(files),'release files sealed')

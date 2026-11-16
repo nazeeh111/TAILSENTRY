@@ -1,5 +1,5 @@
 """Programmatic engine and loopback viewer CLI."""
-import argparse,json
+import argparse,json,sys
 from pathlib import Path
 from .service import investigate,serve
 
@@ -18,7 +18,11 @@ def main():
     result=investigate(config);text=json.dumps(result,indent=2,allow_nan=False)
     if args.output:
         args.output.parent.mkdir(parents=True,exist_ok=True)
-        with args.output.open('x') as file:file.write(text+'\n')
+        try:
+            with args.output.open('x') as file:file.write(text+'\n')
+        except FileExistsError:
+            print(f'Output already exists: {args.output}. Choose a new path.', file=sys.stderr)
+            raise SystemExit(1) from None
         print(args.output.resolve())
     else:print(text)
 

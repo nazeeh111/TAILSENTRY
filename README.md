@@ -23,22 +23,26 @@ Methods share seed labels across conditions, so the full set of runs is not join
 
 ## Run
 
+The current source is unreleased `0.1.1.dev0`. Its local service runs estimates as cancellable jobs with a wall deadline. API callers receive a job ID from `POST /api/run`, poll `/api/status`, and may request cancellation with `/api/cancel`. The previous completed record remains in memory when a later job fails, times out or is cancelled; export JSON for durable storage. These are local workflow protections, not a multi-user service or a guarantee after forced process termination.
+
 Python 3.11+ with NumPy/SciPy. The exact recorded research environment uses Python 3.14.7, NumPy 2.5.4 and SciPy 1.18.1 on an ARM Mac CPU. No API keys, paid services or GPU are required.
 
 ```bash
+git clone https://github.com/nazeeh111/TAILSENTRY.git
+cd TAILSENTRY
 python3 -m venv .venv
 .venv/bin/python -m pip install -e '.[research]'
 .venv/bin/tailsentry estimate --case delta_gamma_1e4 --budget 16384 --seed 42
 .venv/bin/tailsentry serve --port 8768
 ```
 
+To save a CLI record, add `--output path/to/new-record.json`; an existing file is refused rather than overwritten.
+
 Open **http://127.0.0.1:8768**. The server binds to loopback, rejects cross-origin mutation, and evaluates only supported configurations. Records export as JSON. Changing the form does not update an estimate until you run it. The screen distinguishes finite probability bounds from approximate standard errors and model uncertainty.
 
-An isolated environment is already installed in this working copy. From this directory:
-
-```bash
-.venv/bin/tailsentry serve
-```
+The reported finite bounds apply to the supported event **probability** under
+the declared assumptions. They are not bounds on loss severity, VaR or expected
+shortfall; those outputs have separate limitations described below.
 
 ## Python API
 

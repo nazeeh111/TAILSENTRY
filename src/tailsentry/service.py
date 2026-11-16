@@ -1,6 +1,7 @@
 """Loopback-only research interface. No external services or arbitrary code."""
 from http.server import BaseHTTPRequestHandler,ThreadingHTTPServer
-import hashlib,json,mimetypes,re,threading,time
+import hashlib,json,mimetypes,re,signal,socket,threading,time
+from .jobs import EstimateSession
 from collections import OrderedDict
 from pathlib import Path
 import numpy as np
@@ -8,7 +9,6 @@ from .benchmark import CASES,make_case,run_method
 from .envelope import estimate_envelope
 from .attribution import branch_probabilities
 
-LOCK=threading.Lock()
 ASSETS=Path(__file__).parent/'web'
 ROOT=Path(__file__).resolve().parents[2]
 
@@ -96,6 +96,7 @@ def investigate(config):
 
 def serve(port=8768):
     records=RecordStore()
+    session=EstimateSession(records)
     class Handler(BaseHTTPRequestHandler):
         def log_message(self,*args):pass
         def send(self,status,data,content='application/json',attachment=None):
@@ -113,6 +114,7 @@ def serve(port=8768):
                 digest=match.group(1);payload=records.get(digest)
                 if payload is None:return self.send(404,{'error':'Record expired or unavailable. Run the estimate again.'})
                 return self.send(200,payload,'application/json; charset=utf-8',f'tailsentry-{digest[:12]}.json')
+            if self.path=='/api/status':return self.send(200,session.snapshot())
             if self.path=='/api/cases':
                 return self.send(200,[dict(id=c,threshold=make_case(c)[1],truth=make_case(c)[2]) for c in CASES])
             if self.path=='/api/evidence':
@@ -137,18 +139,42 @@ def serve(port=8768):
             origin=self.headers.get('Origin')
             if not self.host_valid() or origin not in (f'http://127.0.0.1:{port}',f'http://localhost:{port}') or self.headers.get('X-Tailsentry')!='local':
                 return self.send(403,{'error':'Same-origin local request required'})
-            if self.path!='/api/run':return self.send(404,{'error':'Not found'})
+            if self.path not in ('/api/run','/api/cancel'):return self.send(404,{'error':'Not found'})
             if self.headers.get('Content-Type')!='application/json':return self.send(415,{'error':'JSON required'})
             try:length=int(self.headers.get('Content-Length','0'))
             except ValueError:return self.send(400,{'error':'Invalid request length'})
             if not 0<length<=8192:return self.send(413,{'error':'Request too large or empty'})
-            if not LOCK.acquire(blocking=False):return self.send(409,{'error':'An estimate is already running'})
             try:
-                config=json.loads(self.rfile.read(length))
+                # A fixed total deadline also stops clients that drip bytes.
+                deadline=time.monotonic()+2
+                chunks=[]; remaining=length
+                while remaining:
+                    timeout=deadline-time.monotonic()
+                    if timeout<=0:raise TimeoutError('Request body timed out')
+                    self.connection.settimeout(timeout)
+                    part=self.rfile.read1(min(remaining,8192))
+                    if not part:raise ValueError('Incomplete request body')
+                    chunks.append(part);remaining-=len(part)
+                config=json.loads(b''.join(chunks))
                 if not isinstance(config,dict):raise ValueError('Configuration must be an object')
-                record=investigate(config);records.add(record)
-                return self.send(200,record)
+                if self.path=='/api/cancel':return self.send(200,session.cancel(config.get('job_id')))
+                return self.send(202,session.start(config))
+            except (socket.timeout,TimeoutError):
+                self.close_connection=True
+                try:return self.send(408,{'error':'Request body timed out'})
+                except OSError:return
             except (ValueError,TypeError,OverflowError,FloatingPointError) as e:return self.send(400,{'error':str(e)})
-            finally:LOCK.release()
+            except RuntimeError as e:return self.send(409,{'error':str(e)})
     print(f'TAILSENTRY local interface: http://127.0.0.1:{port}',flush=True)
-    ThreadingHTTPServer(('127.0.0.1',port),Handler).serve_forever()
+    server=ThreadingHTTPServer(('127.0.0.1',port),Handler)
+    previous=None
+    if threading.current_thread() is threading.main_thread():
+        previous=signal.getsignal(signal.SIGTERM)
+        def stop(_signal,_frame):raise KeyboardInterrupt
+        signal.signal(signal.SIGTERM,stop)
+    try:server.serve_forever()
+    except KeyboardInterrupt:pass
+    finally:
+        session.shutdown()
+        server.server_close()
+        if previous is not None:signal.signal(signal.SIGTERM,previous)

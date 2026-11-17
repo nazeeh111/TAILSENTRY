@@ -1,0 +1,15 @@
+{
+  "truth": 1e-05,
+  "threshold": 4.417173413469023,
+  "budget": 20000,
+  "runs": 512,
+  "defensive_mass": 0.1,
+  "theoretical_hidden_mode_miss_probability": 0.9900498312748571,
+  "observed_hidden_mode_miss_rate": 0.994140625,
+  "finite_coverage": 1.0,
+  "asymptotic_coverage": 0.005859375,
+  "median_tail_ess": 17999.49999999999,
+  "nominal_audit_zero_hit_upper_65536": 4.571020210675851e-05,
+  "audit_cost_for_residual_1e6": 3688878,
+  "interpretation": "Conditional unbiasedness and support do not make normal intervals trustworthy. Finite bound abstains. No cheap generic missed-mode guarantee."
+}

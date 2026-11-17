@@ -6,6 +6,15 @@ TAILSENTRY is a runnable numerical research package for Gaussian and Student-t m
 
 The project does **not** establish an original general estimator or superiority over the state of the art. Its strongest comparator, conditional scrambled Sobol, defeated the selected candidate on the predefined primary task.
 
+## Inspect a finite-budget result
+
+<picture>
+  <source media="(max-width: 600px)" srcset="docs/presentation/evidence-mobile.png">
+  <img src="docs/presentation/evidence.png" alt="One current finite-budget probability estimate, the failed frozen efficiency comparison and all 512 missed-mode outcomes. Only 3 ordinary intervals cover truth; the finite bounds abstain." width="1040">
+</picture>
+
+A useful probability bound is different from a useful general estimator. [Follow the worked evidence](docs/presentation/README.md), inspect the [actual workbench](docs/presentation/workspace.png), or [download the reopenable evidence bundle](docs/presentation/worked-evidence.zip). The new 4,096-draw run is shown separately from the original frozen research. It changes none of the conclusions below.
+
 ## What the evidence says
 
 | Evidence | Result |

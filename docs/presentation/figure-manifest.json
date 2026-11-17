@@ -1,0 +1,12 @@
+{
+  "inputs": {
+    "worked-record.json": "c99a3a3df5e30687e48eeba320303382cec8017aa851a921146a1d84aba47170",
+    "primary-analysis.json": "8988fe031afa2590f0df25d22cf349a640d8ac74a45cdc253c3fb2a5fba94ff3",
+    "missed-mode-runs.json": "f97c27df7762908a160e6d7b1ddea447f2b5908f26ee2abf85ba0475e4dff326",
+    "missed-mode-summary.json": "22ad460504f61c3c0ddc48e0639e83687fe131a04a65fb97d667a81d2c3b2d0f"
+  },
+  "trace_points": 64,
+  "missed_mode_cells": 512,
+  "coverage_cells": 3,
+  "transforms": "Trace x linear sample count; y linear probability 8e-5 to 1.4e-4. Efficiency x log10 ratio 0.01 to100; CI is paired bootstrap. All512 runs encoded in source order. No projection/density/physical-space encoding."
+}

@@ -19,7 +19,7 @@ The probability interval assumes the stated Gaussian loss model, a proved cover 
   <img src="docs/presentation/evidence.png" alt="One current finite-budget probability estimate, the failed frozen efficiency comparison and all 512 missed-mode outcomes. Only 3 ordinary intervals cover truth; the finite bounds abstain." width="1040">
 </picture>
 
-Inspect the [local workbench](docs/presentation/workspace.png) or [download the reopenable evidence bundle](docs/presentation/worked-evidence.zip).
+Inspect the [local workbench](docs/presentation/workspace.png) or [download the reopenable evidence bundle](https://github.com/nazeeh111/TAILSENTRY/raw/c60fa068e6760b368670bd2c9646a15b9400fb45/docs/presentation/worked-evidence.zip).
 
 ## What the evidence says
 

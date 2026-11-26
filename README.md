@@ -52,7 +52,7 @@ python3 -m venv .venv
 .venv/bin/tailsentry serve --port 8768
 ```
 
-To save a CLI record, add `--output path/to/new-record.json`; an existing file is refused rather than overwritten.
+To save a CLI record, add `--output path/to/new-record.json`. The destination appears only after the complete JSON is written, and an existing file is preserved. The destination filesystem must support hard links.
 
 Open **http://127.0.0.1:8768**. The server binds to loopback, rejects cross-origin mutation, and evaluates only supported configurations. Records export as JSON. Changing the form does not update an estimate until you run it. The screen distinguishes finite probability bounds from approximate standard errors and model uncertainty.
 

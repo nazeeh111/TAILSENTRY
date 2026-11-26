@@ -5,6 +5,25 @@ from tempfile import TemporaryDirectory
 from .service import investigate,serve
 
 
+def _save_estimate(path, text):
+    published_directory = None
+    try:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        with TemporaryDirectory(prefix='.tailsentry-', dir=path.parent) as directory:
+            staged = Path(directory) / 'estimate.json'
+            staged.write_text(text+'\n', encoding='utf-8')
+            try:
+                os.link(staged, path)
+            except FileExistsError:
+                raise SystemExit(f'Output already exists: {path}. Choose a new path.') from None
+            published_directory = directory
+    except OSError as error:
+        if published_directory is None:
+            raise SystemExit(f'Could not save estimate to {path}: {error}') from None
+        print(f'Estimate saved to {path}; could not clean staging directory {published_directory}: {error}',
+              file=sys.stderr)
+
+
 def main():
     parser=argparse.ArgumentParser(description='TAILSENTRY rare-event research engine')
     commands=parser.add_subparsers(dest='command',required=True)
@@ -18,18 +37,7 @@ def main():
     config={k:v for k,v in vars(args).items() if k not in ('command','output') and v is not None}
     result=investigate(config);text=json.dumps(result,indent=2,allow_nan=False)
     if args.output:
-        try:
-            args.output.parent.mkdir(parents=True,exist_ok=True)
-            with TemporaryDirectory(prefix='.tailsentry-', dir=args.output.parent) as directory:
-                staged = Path(directory) / 'estimate.json'
-                staged.write_text(text+'\n', encoding='utf-8')
-                try:
-                    os.link(staged, args.output)
-                except FileExistsError:
-                    raise SystemExit(f'Output already exists: {args.output}. Choose a new path.') from None
-        except OSError as error:
-            print(f'Could not save estimate to {args.output}: {error}', file=sys.stderr)
-            raise SystemExit(1) from None
+        _save_estimate(args.output, text)
         print(args.output.resolve())
     else:print(text)
 

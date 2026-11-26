@@ -5,6 +5,8 @@ import os
 import signal
 import subprocess
 import sys
+import tempfile
+from unittest.mock import patch
 
 import pytest
 
@@ -49,3 +51,16 @@ def test_estimate_reports_unusable_parent_without_calling_it_a_destination_confl
     assert 'Could not save estimate' in failure.stderr
     assert 'Output already exists' not in failure.stderr
     assert parent.read_text() == 'original'
+
+
+def test_completed_estimate_is_kept_when_cleanup_fails(tmp_path, capsys):
+    from tailsentry.cli import _save_estimate
+
+    output = tmp_path / 'estimate.json'
+    with patch.object(tempfile.TemporaryDirectory, 'cleanup',
+                      side_effect=OSError('controlled cleanup failure')):
+        _save_estimate(output, '{"estimate":0.001}')
+    assert json.loads(output.read_text()) == {'estimate': 0.001}
+    message = capsys.readouterr().err
+    assert 'Estimate saved' in message
+    assert 'could not clean staging directory' in message

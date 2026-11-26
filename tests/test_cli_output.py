@@ -20,8 +20,9 @@ def test_failed_estimate_write_can_retry_and_preserves_existing_file(tmp_path):
         resource.setrlimit(resource.RLIMIT_FSIZE, (1024, 1024))
 
     output = tmp_path / 'estimate.json'
-    command = [sys.executable, '-m', 'tailsentry.cli', 'estimate', '--budget', '4096',
+    command = [sys.executable, '-B', '-m', 'tailsentry.cli', 'estimate', '--budget', '4096',
                '--seed', '42', '--output', str(output)]
+    # The process limit should affect the output file, not Python's bytecode cache.
     failure = subprocess.run(command, capture_output=True, text=True, timeout=30,
                              preexec_fn=limit_file_size)
     assert failure.returncode == 1
@@ -44,7 +45,7 @@ def test_estimate_reports_unusable_parent_without_calling_it_a_destination_confl
     parent = tmp_path / 'file'
     parent.write_text('original')
     output = parent / 'estimate.json'
-    command = [sys.executable, '-m', 'tailsentry.cli', 'estimate', '--budget', '4096',
+    command = [sys.executable, '-B', '-m', 'tailsentry.cli', 'estimate', '--budget', '4096',
                '--seed', '42', '--output', str(output)]
     failure = subprocess.run(command, capture_output=True, text=True, timeout=30)
     assert failure.returncode == 1

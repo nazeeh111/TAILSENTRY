@@ -247,7 +247,7 @@
     "src/tailsentry/web/style.css": "2274ae904b91b22e9f19c86decbdcd1aa602b4eb1cdcd0b3e5448c3852ede128",
     "src/tailsentry/worker.py": "8a9afc33590c32b6442fda97e368f0e1206785ef878dabc3b59284df2d8c7625",
     "tests/test_aloe.py": "145b6e75cd5470c48d6d8aff6958523c1b0fa969a761cb8cefbd551555a7296a",
-    "tests/test_cli_output.py": "085b8158277e769d1265b1d0b7391a1566f83129cb01d291bb1852b2129e667f",
+    "tests/test_cli_output.py": "30ae9f55caf862cbfb4a0cfea251842fc088391280edef09f4975cf2d93984c5",
     "tests/test_core.py": "47e296e7fa309656810feca651da4cc823582a0a2466d068582425c0aba5232d",
     "tests/test_historical.py": "567587f37d867ae99506b99841ed218a10fb9c36c99c547d835cd115ffcd65ae",
     "tests/test_independent_math.py": "77b5ca989f4408db16cf5d1e8630eae58140ee6b0c6689a3784565432dea86c3",

@@ -1,19 +1,25 @@
 # TAILSENTRY
 
-**Rare-loss estimation with explicit structural assumptions, inspectable probability bounds, and a failed breakthrough hypothesis.**
+Estimate rare-loss probabilities for Gaussian and Student-t maximum-of-quadratic loss models. TAILSENTRY exposes the estimate, the fixed-budget probability bound, and the evidence behind both.
 
-TAILSENTRY is a runnable numerical research package for Gaussian and Student-t maximum-of-quadratic losses. It builds a proved cover of all supported failure regions, samples exact conditional stress scenarios, and integrates a Gaussian risk direction. It returns probability estimates, finite-budget bounds, severity diagnostics, weighted branch contributions and reproducible records. A local terminal-style interface exposes the actual engine.
+## One bound and one failed comparison
 
-The project does **not** establish an original general estimator or superiority over the state of the art. Its strongest comparator, conditional scrambled Sobol, defeated the selected candidate on the predefined primary task.
+**4,096 draws · One replayable estimate.** For an eight-factor Gaussian delta-gamma loss with known probability **0.000100**, the projected-union estimate was **0.000100899**. Its 95% fixed-budget probability interval was **0.00009408 to 0.00010772**. [Exact record](docs/presentation/worked-record.json)
 
-## Inspect a finite-budget result
+**16,384 draws per run · Frozen primary comparison.** Across 128 primary replications, fixed projected-union sampling had **38.79×** the mean squared error × elapsed time of conditional scrambled Sobol. Lower is better. The paired 95% bootstrap interval was **26.48 to 57.32**. The candidate missed its improvement target. [Frozen analysis](docs/presentation/primary-analysis.json)
+
+The probability interval assumes the stated Gaussian loss model, a proved cover and a fixed sampling budget. It does not validate the model, certify loss severity, or permit optional stopping. The worked estimate and the frozen comparison are separate experiments.
+
+[Replay the estimate](#run) · [Follow the evidence](docs/presentation/README.md)
+
+## Inspect the recorded evidence
 
 <picture>
   <source media="(max-width: 600px)" srcset="docs/presentation/evidence-mobile.png">
   <img src="docs/presentation/evidence.png" alt="One current finite-budget probability estimate, the failed frozen efficiency comparison and all 512 missed-mode outcomes. Only 3 ordinary intervals cover truth; the finite bounds abstain." width="1040">
 </picture>
 
-A useful probability bound is different from a useful general estimator. [Follow the worked evidence](docs/presentation/README.md), inspect the [actual workbench](docs/presentation/workspace.png), or [download the reopenable evidence bundle](docs/presentation/worked-evidence.zip). The new 4,096-draw run is shown separately from the original frozen research. It changes none of the conclusions below.
+Inspect the [local workbench](docs/presentation/workspace.png) or [download the reopenable evidence bundle](docs/presentation/worked-evidence.zip).
 
 ## What the evidence says
 
@@ -41,7 +47,8 @@ git clone https://github.com/nazeeh111/TAILSENTRY.git
 cd TAILSENTRY
 python3 -m venv .venv
 .venv/bin/python -m pip install -e '.[research]'
-.venv/bin/tailsentry estimate --case delta_gamma_1e4 --budget 16384 --seed 42
+.venv/bin/tailsentry estimate --case delta_gamma_1e4 --budget 4096 --seed 42 \
+  --threshold 4.64427487894
 .venv/bin/tailsentry serve --port 8768
 ```
 
